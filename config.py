@@ -1,12 +1,14 @@
 import os
 
-API_ID = int(os.environ.get("API_ID", 0))
-API_HASH = os.environ.get("API_HASH", None)
-BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
-DB_CHANNEL_ID = os.environ.get("DB_CHANNEL_ID")
-IS_PRIVATE = os.environ.get("IS_PRIVATE",False) # any input is ok But True preferable
-OWNER_ID = int(os.environ.get("OWNER_ID"))
+API_ID = 4783634
+API_HASH = "f6c33f46599246676f75e153b615dbbc"
+BOT_TOKEN = "5217033229:AAFJv2ZeWzq3G4g31NQP2r6Q6hg1cjEAJK4"
+DB_CHANNEL_ID = -1001784800740
+IS_PRIVATE = True # any input is ok But  preferable
+OWNER_ID = 1476517140
 UPDATE_CHANNEL = os.environ.get('UPDATE_CHANNEL', '')
-AUTH_USERS = list(int(i) for i in os.environ.get("AUTH_USERS", "").split(" ")) if os.environ.get("AUTH_USERS") else []
+AUTH_USERS = [
+              840165909,
+             ]
 if OWNER_ID not in AUTH_USERS:
     AUTH_USERS.append(OWNER_ID)
