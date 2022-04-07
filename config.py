@@ -6,7 +6,7 @@ BOT_TOKEN = "5217033229:AAFJv2ZeWzq3G4g31NQP2r6Q6hg1cjEAJK4"
 DB_CHANNEL_ID = -1001784800740
 IS_PRIVATE = True # any input is ok But  preferable
 OWNER_ID = 1476517140
-UPDATE_CHANNEL = os.environ.get('UPDATE_CHANNEL', '')
+UPDATE_CHANNEL = "pokemon_journeys"
 AUTH_USERS = [
               840165909,
              ]
